@@ -90,7 +90,8 @@
       "children": "Check Out"
     }
   ],
-  "basket": {
+  "basketItem": {
+    "m": "fsdfsdf",
     "className": "ordering__basket",
     "product": {
       "title": "My basket",

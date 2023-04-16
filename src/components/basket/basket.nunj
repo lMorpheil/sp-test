@@ -3,7 +3,8 @@
 {% from "../../components/price/price.nunj" import price %}
 
 {% macro basket() %}
-    <div class="basket{% if basket.className %} {{ basket.className }}{% endif %}">
+
+    <div class="basket{% if basketItem.className %} {{ basketItem.className }}{% endif %}">
         {{ product() }}
         <div class="basket__hr"></div>
         {{ promo() }}

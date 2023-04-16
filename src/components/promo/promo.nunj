@@ -3,10 +3,10 @@
 
 {% macro promo() %}
     <div class="promo">
-        <h3 class="title">{{ basket.promo.title }}</h3>
+        <h3 class="title">{{ basketItem.promo.title }}</h3>
         <div class="promo__flex">
-            {{ field(basket.promo.field) }}
-            {{ button(basket.promo.btn) }}
+            {{ field(basketItem.promo.field) }}
+            {{ button(basketItem.promo.btn) }}
         </div>
     </div>
 {% endmacro %}
