@@ -1,0 +1,13 @@
+{% from "../../components/product/product.nunj" import product %}
+{% from "../../components/promo/promo.nunj" import promo %}
+{% from "../../components/price/price.nunj" import price %}
+
+{% macro basket() %}
+    <div class="basket{% if basket.className %} {{ basket.className }}{% endif %}">
+        {{ product() }}
+        <div class="basket__hr"></div>
+        {{ promo() }}
+        <div class="basket__hr"></div>
+        {{ price() }}
+    </div>
+{% endmacro %}

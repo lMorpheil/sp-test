@@ -1,0 +1,17 @@
+.basket {
+	position: relative;
+	border-left: 1px solid #cfcfcf;
+}
+
+.basket__hr {
+	position: absolute;
+	width: 100vw;
+	height: 1px;
+	background-color: #cfcfcf;
+}
+
+@include mq($max-width: 980px) {
+	.basket {
+		display: none;
+	}
+}

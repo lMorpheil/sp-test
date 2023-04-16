@@ -1,0 +1,10 @@
+{% macro price() %}
+    <div class="price" data-js="price-wrapper">
+        {% for item in basket.prices %}
+            <div class="price__item{% if item.className %} {{ item.className }}{% endif %}">
+                <span>{{ item.title }}</span>
+                <span>{{ item.price }}</span>
+            </div>
+        {% endfor %}
+    </div>
+{% endmacro %}

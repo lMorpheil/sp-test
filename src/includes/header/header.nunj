@@ -1,0 +1,11 @@
+{% from "../../components/logo/logo.nunj" import logo %}
+{% from "../../components/menu/menu.nunj" import menu %}
+
+<header class="header">
+    <div class="container">
+        <div class="header__flex">
+            {{ logo(false) }}
+            {{ menu(menuItem) }}
+        </div>
+    </div>
+</header>

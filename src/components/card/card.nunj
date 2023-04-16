@@ -1,0 +1,19 @@
+{% from "../../components/field/field.nunj" import field %}
+
+{% macro card(props) %}
+    <div class="card{% if props.className %} {{ props.className }}{% endif %}">
+
+        <div class="card__top">
+            {{ field(props.field.clientName) }}
+        </div>
+
+        <div class="card__middle">
+            {{ field(props.field.cardNumber) }}
+        </div>
+
+        <div class="card__bottom">
+            {{ field(props.field.date) }}
+            {{ field(props.field.cvv) }}
+        </div>
+    </div>
+{% endmacro %}

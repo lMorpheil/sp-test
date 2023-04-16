@@ -1,0 +1,30 @@
+{% macro field(props) %}
+    <label class="field{% if props.className %} {{ props.className }}{% endif %}">
+
+        {% if props.label %}
+            <span class="field__title">
+                {{ props.label }}
+                {% if props.tooltip %}
+                    <a href="javascript:void(0)" class="field__tooltip">?</a>
+                {% endif %}
+            </span>
+        {% endif %}
+
+        <span class="field__flex">
+            {% for item in range(0, props.fieldCounter) %}
+                <input
+                        class="field__input"
+                        type="{{ item.type | default('text', true) }}"
+                        placeholder="{{ item.placeholder }}"
+                >
+            {% else %}
+                <input
+                        class="field__input"
+                        type="{{ props.type | default('text', true) }}"
+                        placeholder="{{ props.placeholder }}"
+                >
+            {% endfor %}
+        </span>
+
+    </label>
+{% endmacro %}

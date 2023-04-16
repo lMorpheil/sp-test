@@ -1,0 +1,32 @@
+.button {
+	@extend .transition-active;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	padding-right: 30px;
+	padding-left: 30px;
+	min-height: 40px;
+	background-color: #36f;
+	border: transparent;
+	border-radius: 3px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	color: #fff;
+
+	&:hover {
+	}
+
+	&:active {
+	}
+
+	&__theme_simple {
+		background: #fff;
+		border: 1px solid #cfcfcf;
+		color: #000;
+	}
+}

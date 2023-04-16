@@ -1,0 +1,22 @@
+{% from "../icon/icon.nunj" import icon %}
+
+{% macro radio(props) %}
+    <label class="radio {% if props.className %}{{ props.className }}{% endif %}">
+        <input
+                class="radio__input"
+                type="radio"
+                name={{ props.name }}
+                {% if props.checked %} checked {% endif %}
+        >
+        <span class="radio__btn"></span>
+        {% if props.title %}
+            <span class="radio__title">{{ props.title }}</span>
+        {% elseif props.img %}
+            {{ icon({
+                iconName: 'paypal',
+                className: 'radio__icon',
+                attr: 'viewBox="0 0 85 23" style="width: 85px; height: 23px; fill: none;"'
+            }) }}
+        {% endif %}
+    </label>
+{% endmacro %}

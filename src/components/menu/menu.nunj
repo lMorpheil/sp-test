@@ -1,0 +1,25 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+
+{% macro menu() %}
+    <nav class="menu">
+
+        {% for item in menuItems %}
+            <a
+                    href="javascript:void(0)"
+                    class="menu__item{% if item.className %} {{ item.className }} {% endif %}"
+            >
+                {% if item.basketCounter %}
+                    <span class="menu__counter"><span>{{ item.basketCounter }}</span></span>
+                {% endif %}
+
+                {{ icon(item) }}
+            </a>
+        {% endfor %}
+
+        <div class="menu__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+{% endmacro %}

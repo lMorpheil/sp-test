@@ -1,0 +1,25 @@
+{% from "../../components/radio/radio.nunj" import radio %}
+{% from "../../components/checkbox/checkbox.nunj" import checkbox %}
+{% from "../../components/card/card.nunj" import card %}
+
+{% macro payment() %}
+    <div class="payment">
+
+        <h3 class="title payment__title">{{ paymentItem.title }}</h3>
+
+        <div class="payment__radio-btn">
+            {% for item in paymentItem.radio %}
+                {{ radio(item) }}
+            {% endfor %}
+        </div>
+
+        {{ card(paymentItem.card) }}
+
+        <div class="payment__wrapper">
+            {% for item in paymentItem.checkbox %}
+                {{ checkbox(item) }}
+            {% endfor %}
+        </div>
+
+    </div>
+{% endmacro %}

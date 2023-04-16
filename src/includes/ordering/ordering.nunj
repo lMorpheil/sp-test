@@ -1,0 +1,30 @@
+{% from "../../components/progress/progress.nunj" import progress %}
+{% from "../../components/payment/payment.nunj" import payment %}
+{% from "../../components/basket/basket.nunj" import basket %}
+{% from "../../components/button/button.nunj" import button %}
+
+<section class="ordering">
+    <div class="container">
+        <div class="ordering__grid">
+
+            <div class="ordering__steps">
+
+                <div>
+                    {{ progress() }}
+                    {{ payment() }}
+                </div>
+
+                <div class="ordering__navigation">
+
+                    {% for item in navigationButton %}
+                        {{ button(item) }}
+                    {% endfor %}
+
+                </div>
+            </div>
+
+            {{ basket() }}
+
+        </div>
+    </div>
+</section>

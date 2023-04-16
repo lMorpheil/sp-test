@@ -1,0 +1,12 @@
+{% from "../../components/button/button.nunj" import button %}
+{% from "../../components/field/field.nunj" import field %}
+
+{% macro promo() %}
+    <div class="promo">
+        <h3 class="title">{{ basket.promo.title }}</h3>
+        <div class="promo__flex">
+            {{ field(basket.promo.field) }}
+            {{ button(basket.promo.btn) }}
+        </div>
+    </div>
+{% endmacro %}

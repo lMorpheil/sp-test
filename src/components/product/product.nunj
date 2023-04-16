@@ -1,0 +1,34 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+
+{% macro product() %}
+    <div class="product">
+        <h3 class="title product__title">{{ basket.product.title }}</h3>
+        <div class="production__wrapper" data-js="production-wrapper">
+            {% for item in basket.product.items %}
+
+                <div class="product__item">
+                    <img class="product__image" src="{{ item.img }}" alt="{{ item.productNmae }}">
+
+                    <div class="product__info">
+                        <p class="product__description">{{ item.text }}</p>
+                        <div class="product__control">
+                            <button class="product__btn product__btn_decrement">
+                                {{ icon( basket.product.btnDecrement ) }}
+                            </button>
+                            <span class="product__counter">{{ item.count }}</span>
+                            <button class="product__btn product__btn_increment">
+                                {{ icon( basket.product.btnDecrement ) }}
+                            </button>
+                            <span class="product__price">{{ item.price }}</span>
+                        </div>
+                    </div>
+
+                    <button class="product__btn" data-js="delete">
+                        {{ icon( basket.product.btnDelete ) }}
+                    </button>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

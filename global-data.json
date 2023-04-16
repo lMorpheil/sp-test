@@ -1,0 +1,160 @@
+{
+  "menuItems": [
+    {
+      "iconName": "search",
+      "attr": "viewBox=\"0 0 24 24\" style=\"width: 24px; height: 24px; fill: none;\""
+    },
+    {
+      "className": "menu__item_offset_right",
+      "basketCounter": 2,
+      "iconName": "basket",
+      "attr": "viewBox=\"0 0 24 21\" style=\"width: 24px; height: 21px; fill: none;\""
+    }
+  ],
+  "progressItem": {
+    "className": "ordering__progress",
+    "items": [
+      {
+        "title": "Account",
+        "className": "progress__step_active"
+      },
+      {
+        "title": "Shipping",
+        "className": "progress__step_active"
+      },
+      {
+        "title": "Billing",
+        "className": "progress__step_focus"
+      },
+      {
+        "title": "Review"
+      }
+    ]
+  },
+  "paymentItem": {
+    "title": "Billing Information",
+    "radio": [
+      {
+        "title": "Pay with Credit Card",
+        "name": "pay",
+        "checked": true
+      },
+      {
+        "img": true,
+        "name": "pay"
+      }
+    ],
+    "checkbox": [
+      {
+        "title": "Save information of this credit card",
+        "checked": true
+      },
+      {
+        "title": "I accept the <b>terms and comditions</b> and the <b>Privacy Policies</b>"
+      }
+    ],
+    "card": {
+      "className": "payment__card",
+      "field": {
+        "clientName": {
+          "type": "text",
+          "placeholder": "Placeholder Text",
+          "label": "Name on card",
+          "pattern": "",
+          "className": "3123"
+        },
+        "cardNumber": {
+          "label": "Card number",
+          "fieldCounter": 4,
+          "className": "field__input_size_s"
+        },
+        "date": {
+          "type": "number",
+          "label": "Expire date",
+          "pattern": ""
+        },
+        "cvv": {
+          "type": "number",
+          "label": "CVV code",
+          "tooltip": true
+        }
+      }
+    }
+  },
+  "navigationButton": [
+    {
+      "children": "Back",
+      "className": "button__theme_simple"
+    },
+    {
+      "children": "Check Out"
+    }
+  ],
+  "basket": {
+    "className": "ordering__basket",
+    "product": {
+      "title": "My basket",
+      "btnDecrement": {
+        "iconName": "increment",
+        "attr": "viewBox='0 0 21 20' style='width: 21px; height: 20px; fill: none;'"
+      },
+      "btnIncrement": {
+        "iconName": "decrement",
+        "attr": "viewBox=\"0 0 21 20\" style=\"width: 21px; height: 20px; fill: none;\""
+      },
+      "btnDelete": {
+        "iconName": "crosshair",
+        "attr": "viewBox=\"0 0 17 18\" style=\"width: 17px; height: 18px; fill: none;\""
+      },
+      "items": [
+        {
+          "productNmae": "какое-то название",
+          "img": "../../assets/images/inline/products/jacket.png",
+          "text": "Amet minim mollit non deserunt ullamco est sit",
+          "price": "$ 525",
+          "count": 1
+        },
+        {
+          "productNmae": "какое-то название",
+          "img": "../../assets/images/inline/products/sneakers.png",
+          "text": "Amet minim mollit non",
+          "price": "$ 525",
+          "count": 1
+        }
+      ]
+    },
+    "promo": {
+      "title": "Promo code",
+      "field": {
+        "type": "text",
+        "placeholder": "Placeholder Text",
+        "className": "promo__field"
+      },
+      "btn": {
+        "children": "Apply"
+      }
+    },
+    "prices": [
+      {
+        "title": "Subtotal",
+        "price": "$1 050",
+        "className": "subtotal"
+      },
+      {
+        "title": "Tax",
+        "price": "$100",
+        "className": "tax"
+      },
+      {
+        "title": "Shipping",
+        "price": "$150",
+        "className": "shipping"
+      },
+      {
+        "title": "Total",
+        "price": "$1 300",
+        "className": "price__item_style_bold total"
+      }
+    ]
+  }
+}

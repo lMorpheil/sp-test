@@ -1,0 +1,15 @@
+.promo {
+	padding: 40px 10px 40px 40px;
+}
+
+.promo__flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.promo__field {
+	flex-grow: 1;
+	margin-right: 10px;
+}
