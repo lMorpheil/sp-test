@@ -1,13 +1,13 @@
 .basket {
 	position: relative;
-	border-left: 1px solid #cfcfcf;
+	border-left: 1px solid $color-border-grey;
 }
 
 .basket__hr {
 	position: absolute;
 	width: 100vw;
 	height: 1px;
-	background-color: #cfcfcf;
+	background-color: $color-border-grey;
 }
 
 @include mq($max-width: 980px) {

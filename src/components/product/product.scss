@@ -24,7 +24,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-	color: #000;
+	color: $color-text-default;
 }
 
 .product__info {
@@ -62,7 +62,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-	color: #000;
+	color: $color-text-default;
 }
 
 .product__price {
@@ -71,7 +71,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-	color: #000;
+	color: $color-text-default;
 	margin-left: auto;
 	white-space: nowrap;
 }

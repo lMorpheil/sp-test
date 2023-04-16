@@ -29,12 +29,12 @@
 	line-height: 11px;
 	top: -5px;
 	right: 0;
-	color: #fff;
+	color: $color-control-white;
 	position: absolute;
 	width: 13px;
 	height: 13px;
 	border-radius: 50%;
-	background-color: #36f;
+	background-color: $color-menu-bg;
 }
 
 .menu__burger {
@@ -51,7 +51,7 @@
 			display: block;
 			height: 2px;
 			width: 100%;
-			background-color: #000;
+			background-color: $color-menu-bg-dark;
 
 			&:not(:first-child) {
 				margin-top: 8px;

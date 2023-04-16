@@ -8,7 +8,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-	color: #8c8c8c;
+	color: $color-control-lable;
 }
 
 .checkbox__input {
@@ -23,7 +23,7 @@
 		transform: translate(-50%, -50%);
 		width: 8px;
 		height: 8px;
-		background-color: #36f;
+		background-color: $color-control-bg;
 	}
 }
 
@@ -33,13 +33,14 @@
 	width: 18px;
 	height: 18px;
 	flex: 0 0 18px;
-	border: 1px solid #cfcfcf;
+	border: 1px solid $color-border-grey;
 	margin-right: 8px;
 }
 
 .checkbox__title {
+	
 	> * {
-		color: #000;
+		color: $color-text-default;
 	}
 }
 

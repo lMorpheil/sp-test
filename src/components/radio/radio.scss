@@ -7,7 +7,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-	color: #000;
+	color: $color-text-default;
 	cursor: pointer;
 }
 
@@ -24,7 +24,7 @@
 		width: 8px;
 		height: 8px;
 		border-radius: 50%;
-		background-color: #36f;
+		background-color: $color-control-bg;
 	}
 }
 
@@ -35,7 +35,7 @@
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-	border: 1px solid #cfcfcf;
+	border: 1px solid $color-border-grey;
 	user-select: none;
 	margin-right: 9px;
 }
